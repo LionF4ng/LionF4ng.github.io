@@ -366,6 +366,10 @@ section:nth-child(even) {
     border-bottom: 1px solid var(--border-color);
 }
 
+.course-category h5:not(:first-child) {
+    margin-top: 0.5rem;
+}
+
 .course-list {
     display: grid;
     grid-template-columns: 1fr;
@@ -626,6 +630,32 @@ section:nth-child(even) {
 .project-title {
     color: var(--primary-color);
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.wip-badge {
+    background: linear-gradient(135deg, #ff6b6b, #ff8787);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+    }
+    50% {
+        box-shadow: 0 2px 12px rgba(255, 107, 107, 0.5);
+    }
 }
 
 .project-tech {
