@@ -658,6 +658,18 @@ section:nth-child(even) {
     }
 }
 
+.thesis-badge {
+    background: linear-gradient(135deg, #00c853, #00e676);
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0, 200, 83, 0.3);
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
