@@ -1,97 +1,45 @@
-# Portfolio Website
+# Portfolio — Nikita Sidarovich
 
-A modern, responsive portfolio website showcasing projects, skills, and professional experience.
-
-## Features
-
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean, professional design with smooth animations
-- **Interactive Elements**: Animated skill bars, smooth scrolling, and hover effects
-- **Contact Form**: Functional contact form for potential clients/employers
-- **Project Showcase**: Dedicated section for featuring your best work
-- **Skills Display**: Visual representation of technical skills and proficiency levels
+Personal portfolio website. A clean, responsive, single-page site built with plain
+HTML, CSS and JavaScript (no build step) and deployed via GitHub Pages at
+[nikitasidarovich.engineer](https://nikitasidarovich.engineer).
 
 ## Structure
 
 ```
 Portfolio/
-├── index.html          # Main HTML file
+├── index.html       # All page content
 ├── css/
-│   └── style.css       # Stylesheet with responsive design
+│   └── style.css    # Light, professional theme
 ├── js/
-│   └── script.js       # JavaScript for interactivity
-├── images/             # Directory for profile photo and project screenshots
-├── documents/          # Directory for resume/CV downloads
-└── README.md           # This file
+│   └── script.js    # Mobile nav, scroll reveal, scrollspy
+├── images/          # Profile photo and project screenshots
+├── documents/       # CV / resume downloads (optional)
+├── CNAME            # Custom domain for GitHub Pages
+└── README.md
 ```
 
 ## Sections
 
-1. **Header/Navigation**: Fixed navigation bar with smooth scrolling
-2. **Hero Section**: Eye-catching introduction with call-to-action
-3. **About**: Personal story and professional background
-4. **Skills**: Visual display of technical skills with progress bars
-5. **Projects**: Showcase of featured work with live demos and code links
-6. **Contact**: Contact form and social media links
-7. **Footer**: Copyright and additional information
+1. **Hero** — name, focus, and quick links
+2. **About** — short bio and quick facts
+3. **Education** — MSc at Linköping University, Erasmus+ exchange at Università di Genova, and key courses
+4. **Skills** — grouped skill tags
+5. **Projects** — featured academic and personal work
+6. **Contact** — email, LinkedIn, GitHub
 
-## Customization
+## Editing
 
-### Personal Information
-- Update the name in the logo and hero section
-- Replace "Your Name" throughout the HTML
-- Add your professional title and description
-- Update contact information and social media links
+- **Content:** edit `index.html` directly.
+- **Colors / spacing:** adjust the CSS custom properties in the `:root` block of `css/style.css`.
+- **Projects:** duplicate a `.project-card` block and add the screenshot to `images/`.
 
-### Projects
-- Replace project placeholders with your actual work
-- Add project screenshots to the `images/` directory
-- Update project descriptions and technology stacks
-- Add live demo and GitHub repository links
+## Local preview
 
-### Skills
-- Modify the skills sections to reflect your expertise
-- Adjust skill percentages based on your proficiency
-- Add or remove skill categories as needed
+Open `index.html` in a browser, or serve the folder:
 
-### Styling
-- Customize colors by modifying CSS variables in `:root`
-- Adjust layout and spacing in the CSS file
-- Add your personal branding elements
+```bash
+python -m http.server 8000
+```
 
-### Images
-- Add your profile photo: `images/profile.jpg`
-- Add project screenshots: `images/project1.jpg`, etc.
-- Optimize images for web (recommended: WebP format, compressed)
-
-### Resume
-- Add your resume PDF to the `documents/` directory
-- Update the download link in the About section
-
-## Getting Started
-
-1. Clone or download this repository
-2. Replace placeholder content with your information
-3. Add your photos and resume to appropriate directories
-4. Customize colors and styling to match your brand
-5. Test responsiveness on different devices
-6. Deploy to your preferred hosting platform
-
-## Deployment Options
-
-- **GitHub Pages**: Free hosting for static sites
-- **Netlify**: Easy deployment with form handling
-- **Vercel**: Fast deployment with great performance
-- **Traditional Web Hosting**: Upload files via FTP
-
-## Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers
-
-## License
-
-This template is free to use for personal and commercial projects.
+Then visit `http://localhost:8000`.
