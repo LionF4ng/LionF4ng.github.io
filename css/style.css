@@ -348,6 +348,33 @@ section {
     border: 1px solid var(--border);
 }
 
+.education-item--featured {
+    position: relative;
+    border: 2px solid #22c55e;
+    background: linear-gradient(135deg, rgba(34, 197, 94, .08), rgba(22, 163, 74, .03));
+    box-shadow: 0 10px 30px rgba(34, 197, 94, .18);
+}
+
+.education-item--featured::before {
+    content: "★ Highlight";
+    position: absolute;
+    top: -.75rem;
+    left: 2rem;
+    background: linear-gradient(135deg, #16a34a, #22c55e);
+    color: #fff;
+    padding: .25rem .85rem;
+    border-radius: 999px;
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    box-shadow: 0 4px 12px rgba(34, 197, 94, .35);
+}
+
+.education-item--featured .education-header h3 {
+    font-size: 1.55rem;
+}
+
 .education-header {
     display: flex;
     justify-content: space-between;
