@@ -2,7 +2,7 @@
 
 Personal portfolio website. A clean, responsive, single-page site built with plain
 HTML, CSS and JavaScript (no build step) and deployed via GitHub Pages at
-[nikitasidarovich.engineer](https://nikitasidarovich.engineer).
+[nikitasidarovich.site](https://nikitasidarovich.site/).
 
 ## Structure
 
