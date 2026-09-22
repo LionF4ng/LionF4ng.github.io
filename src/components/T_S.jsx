@@ -3,7 +3,7 @@ function T_S({name}){
     //Class
     let cl = "w-26 h-26 mx-1 mt-2 rounded-3xl border-4 p-2 border-red-600 bg-red-900"
     //File Path
-    let file_path = "src/assets/"
+    let file_path = "assets/"
     //Link for the tech tags
     let url_link
     //Check what type of tech stack

@@ -1,6 +1,6 @@
 import { easeInOut, motion } from "motion/react"
 function Social_Link({name}){
-    let file_path = "src/assets/"
+    let file_path = "assets/"
     let url_link
     switch (name) {
         case "GitHub":
