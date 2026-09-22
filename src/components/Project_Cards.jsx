@@ -44,12 +44,7 @@ function Project_Cards({image_name}){
             ))} 
         </div>
 
-        <motion.a whileHover={{ scale: 1.2 }}
-        whileTap={{ scale: 0.95}}
-        transition={easeInOut} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="flex w-fit ml-5 my-auto mb-5 content-end">
-            <img src="assets/youtube.png" class="w-14"></img>
-            <p class="text-2xl ml-2 my-auto text-white">Demo</p>
-        </motion.a>
+        
     </div>
     )
 }
