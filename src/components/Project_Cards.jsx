@@ -32,7 +32,7 @@ function Project_Cards({image_name}){
     return(
     <div key={image_name} class="flex flex-col mx-2 w-155 xl:h-200 rounded-3xl border-4 my-4 bg-red-950 border-red-600">
 
-        <h1 class="text-3xl font-black text-white mx-auto text-center mt-5" >{image_name}</h1>
+        <h1 class="text-3xl font-bold text-white mx-auto text-center mt-5" >{image_name}</h1>
         
         <img src={im_path} class="object-cover rounded-3xl w-11/12 mx-auto mt-5 h-70"></img>
         
@@ -44,7 +44,12 @@ function Project_Cards({image_name}){
             ))} 
         </div>
 
-        
+        <motion.a whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 0.95}}
+        transition={easeInOut} href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="flex w-fit ml-5 my-auto mb-5 content-end">
+            <img src="assets/youtube.png" class="w-14"></img>
+            <p class="text-2xl ml-2 my-auto text-white">Demo</p>
+        </motion.a>
     </div>
     )
 }

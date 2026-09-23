@@ -14,12 +14,12 @@ createRoot(document.getElementById('root')).render(
     {/*Render the name card*/}
     <App />
     {/*Render the tech stacks*/}
-    <motion.h1 initial={{opacity: 0, y:-100}} animate={{ opacity: 1, y:0, transition: {duration: 0.8}, easeInOut}} class="text-5xl font-black text-white mx-auto text-center mt-20 mb-10">Tech Stacks</motion.h1>
+    <motion.h1 initial={{opacity: 0, y:-100}} animate={{ opacity: 1, y:0, transition: {duration: 0.8}, easeInOut}} class="text-5xl font-bold text-white mx-auto text-center mt-20 mb-10">Tech Stacks</motion.h1>
     <motion.div initial={{opacity: 0, y:-100}} animate={{ opacity: 1, y:0, transition: {duration: 0.8}, easeInOut}} class="flex flex-wrap justify-center mx-auto mt-10">
       <T_S_R/>
     </motion.div>
     {/*Render the project cards*/}
-    <motion.h1 initial={{opacity: 0, y:-100}} animate={{ opacity: 1, y:0, transition: {duration: 0.8}, easeInOut}} class="text-5xl font-black text-white mx-auto text-center mt-16">Projects</motion.h1>
+    <motion.h1 initial={{opacity: 0, y:-100}} animate={{ opacity: 1, y:0, transition: {duration: 0.8}, easeInOut}} class="text-5xl font-bold text-white mx-auto text-center mt-16">Projects</motion.h1>
     <motion.div initial={{opacity: 0, y:-100}} animate={{ opacity: 1, y:0, transition: {duration: 0.8}, easeInOut}} class="flex flex-wrap justify-center mx-auto mt-10 w-10/12">
       <Project_Cards image_name ="Salify"/>
       <Project_Cards image_name ="TBMI26"/>
