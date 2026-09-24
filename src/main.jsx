@@ -30,5 +30,6 @@ createRoot(document.getElementById('root')).render(
       <Project_Cards image_name ="Salify"/>
       <Project_Cards image_name ="Learn-To-Sing"/>
     </motion.div>
+    <motion.div class="w-full h-10"></motion.div>
   </StrictMode>
 )
