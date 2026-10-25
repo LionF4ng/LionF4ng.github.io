@@ -174,33 +174,21 @@ function T_S({name}){
     }
     return(
     <div>
-        <a href={url_link} target="_blank" className="cursor-none">
-                <Cursor
+        <Cursor
           attachToParent
-          variants={{
-            initial: {scale: 0.3, opacity: 0 },
-            animate: {scale: 1, opacity: 1 },
-            exit: {scale: 0.3, opacity: 0 },
-          }}
-          transition={{
-            ease: 'easeInOut',
-            duration: 0.15,
-          }}
-          className='left-4 top-7'
+          className='top-10'
         >
-          <div>
-            <MouseIcon/>
-            <div className='ml-4 rounded-sm bg-black px-2 py-0.5 text-white'>
+            <div className='ml-2 bg-black border-2 rounded-xl border-white px-3 py-1 text-lg text-white'>
               {name}
             </div>
-          </div>
         </Cursor>
-        <motion.img whileHover={{ scale: 1.2, y: -10}}
+        <a href={url_link} target="_blank">
+         <motion.div whileHover={{ scale: 1.1, y: -10}}
         whileTap={{ scale: 0.95, y: 5}}
-        transition={easeInOut}
-        
-        src= {file_path} class={cl}
-        ></motion.img>
+        transition={easeInOut}>
+        <img src= {file_path} class={cl}
+        ></img>
+        </motion.div>
         </a>
     </div>
     )         
